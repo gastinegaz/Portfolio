@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond douce */
+    color: #333; /* Couleur principale du texte */
+    line-height: 1.6;
+}
+
+/* En-tête principal */
+header {
+    background-color: #154fa0; /* Couleur bleu foncé */
+    color: #fff; /* Texte blanc */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Sections générales */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff; /* Fond blanc pour les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Titres des sections */
+section h3 {
+    color: #154fa0; /* Bleu pour les titres */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffa36c; /* Ligne orange sous le titre */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Paragraphe */
+section p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+#competences {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#competences h3 {
+    color: #154fa0;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffa36c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.competence {
+    margin: 15px 0;
+}
+
+.competence span {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+/* Section LinkedIn */
+#linkedin {
+    text-align: center; /* Centre le contenu de la section */
+    margin: 20px auto;
+}
+
+#linkedin-img {
+    width: 150px; /* Largeur de l'image pour la rendre plus petite */
+    max-width: 100%; /* S'assure que l'image reste responsive */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 10px; /* Ajout d'un effet légèrement arrondi */
+    transition: transform 0.3s ease; /* Ajoute une animation lors du survol */
+}
+
+#linkedin-img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+
+/* Barres de progression */
+.bar-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.bar {
+    height: 100%;
+    width: 0;
+    background-color: #ffa36c;
+    transition: width 1.5s ease-out;
+}
+
+
+/* Réactivité pour petits écrans */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h3 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    section ul li {
+        font-size: 1em;
+    }
+}
