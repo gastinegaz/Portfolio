@@ -96,7 +96,18 @@ section p {
 #footer-section img:hover {
     transform: scale(1.1);
 }
-
+#trains-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 15px;
+}
+#etudiant-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 15px;
+}
 /* Barres de progression */
 .bar-container {
     width: 100%;
