@@ -123,6 +123,49 @@ section p {
     background-color: #ffa36c;
     transition: width 1.5s ease-out;
 }
+.competence-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Couleurs spécifiques */
+.administrer h3, .administrer p {
+    color: #EEE8AA;
+}
+
+.gerer h3, .gerer p {
+    color: limegreen;
+}
+
+.conduire h3, .conduire p {
+    color: dodgerblue;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .competence-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /* Réactivité pour petits écrans */
 @media (max-width: 768px) {
