@@ -47,7 +47,45 @@ document.addEventListener("DOMContentLoaded", () => {
         checkBarsInView(); // Animer les barres visibles au chargement
     };
 
-    // Appeler les deux fonctions
+    // Appeler les deux fonctions pour header et barres
     handleHeaderVisibility();
     handleCompetenceBars();
+
+    /* ===========================================
+       PARTIE AJOUTÉE : Gestion des modals Projets
+       =========================================== */
+
+    // Ouvrir le modal correspondant au clic sur une carte
+    const projectCards = document.querySelectorAll(".project-card");
+    projectCards.forEach(card => {
+        card.addEventListener("click", () => {
+            const modalId = card.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "flex";
+            }
+        });
+    });
+
+    // Fermer le modal quand on clique sur la croix
+    const closeButtons = document.querySelectorAll(".close-modal");
+    closeButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const parentModal = btn.closest(".project-modal");
+            if (parentModal) {
+                parentModal.style.display = "none";
+            }
+        });
+    });
+
+    // Fermer le modal si on clique hors du contenu (sur le fond sombre)
+    const modals = document.querySelectorAll(".project-modal");
+    modals.forEach(modal => {
+        modal.addEventListener("click", (e) => {
+            // Si la cible du clic est bien le conteneur .project-modal (pas le .modal-content)
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
 });

@@ -15,8 +15,8 @@
     </div>
 </header>
 
-<!-- Section Moi -->
 <main>
+    <!-- Section Moi -->
     <section id="moi">
         <h3>Moi</h3>
         <p>
@@ -26,6 +26,7 @@
         </p>
     </section>
 
+    <!-- Section Parcours -->
     <section id="parcours">
         <h3>Parcours</h3>
         <p>
@@ -36,27 +37,88 @@
         </p>
     </section>
 
+    <section id="BUT">
+        <h3>BUT</h3>
+        <p>
+            Le BUT Informatique m'a permis de reprendre les notions de programmation depuis la base, à un niveau beaucoup plus avancé qu'au départ. J'ai pu apprendre différents langages et confirmer mes connaissances sur les différents projets nommés SAE.
+        </p>
+    </section>
+
+
+    <!-- Section Projets (mise à jour) -->
     <section id="projet">
-    <h3>Projets</h3>
-    <p>
-        Lors de mon parcours, plusieurs projets ont été réalisés dans l'objectif de m'améliorer :
+        <h3>Projets</h3>
+        <p>
+            Ici, les différents projets importants de ma formation sont représentatifs des compétences
+            acquises lors de ma formation.
+        </p>
+        <!-- Grille de cartes de projets -->
+        <div class="project-grid">
+            <div class="project-card" data-modal="modal-trains">
+                Trains
+            </div>
+            <div class="project-card" data-modal="modal-etudiant">
+                Poursuite d'études
+            </div>
+            <div class="project-card" data-modal="modal-Stage">
+                Stage BUT2 Boa Concept
+            </div>
+            <!-- Pour ajouter un nouveau projet, faire la même chose :
+                 <div class="project-card" data-modal="modal-mon-nouveau-projet">Mon Nouveau Projet</div>
+            -->
+        </div>
 
-        Le premier est le projet "Trains". Ce projet a pour objectif de coder le jeu japonais "Trains".
-        Cela est l'aboutissement de l'apprentissage en développement Objet et IHM en Java.
-    </p>
+        <!-- Modale pour le projet "Trains" : texte AVANT image -->
+        <div id="modal-trains" class="project-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h4>Projet Trains</h4>
+                <!-- TEXTE AU-DESSUS -->
+                <p>
+                    Ce projet a pour objectif de coder le jeu japonais "Trains".
+                    C'est l'aboutissement de l'apprentissage en développement Objet et IHM en Java.
+                </p>
+                <img src="ressource/imagetrains.png" alt="Image du projet Trains" class="modal-image">
+            </div>
+        </div>
 
-    <img src="ressource/imagetrains.png" alt="Image du projet Trains" id="trains-img">
+        <!-- Modale pour le projet "Poursuite d’études" : texte AVANT image -->
+        <div id="modal-etudiant" class="project-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h4>Projet Poursuite d’études</h4>
+                <!-- TEXTE AU-DESSUS -->
+                <p>
+                    Ce projet avait pour but d'imiter un projet en entreprise :
+                    créer une application web pour gérer des étudiants avec une base de données.
+                    Nous avons appliqué la méthode Agile avec un client et testé nos capacités en PHP.
+                </p>
+                <img src="ressource/imageetudiant.png" alt="Image du projet Poursuite d’études" class="modal-image">
+            </div>
+        </div>
+        <div id="modal-Stage" class="project-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h4>Projet Stage Boa Concept</h4>
+                <p>
+                    Lors de ma seconde année de BUT Informatique, un stage en entreprise de 10 semaines est
+                    obligatoire. J'ai donc effectué ce stage chez Boa Concept, entreprise vendant des convoyeurs
+                    intelligents. Pendant ce stage, j'ai créé un logiciel de statistiques en C# pour la hotline,
+                    remplaçant l'ancien outil.
+                </p>
+                <img src="ressource/Boa.png" alt="Image du projet Stage Boa Concept" class="modal-image">
+            </div>
+        </div>
+    </section>
 
-    <p>
-        Le second est le projet "Poursuite d'études", qui avait pour but d'imiter un projet en entreprise.
+    <section id="Avenir">
+        <h3>Avenir</h3>
+        <p>
+            Pour l'avenir, plusieurs options s'offrent à moi. La première est de continuer mes études jusqu'au niveau bac+5. Cela consoliderait fortement mes compétences afin d'entrer dans le monde du travail dans de bonnes conditions.
+            L'autre choix serait qu'à la fin du BUT3, je commence directement à travailler. Le problème avec cette option serait que les opportunités qui s'offriraient à moi seraient moindres.
+        </p>
+    </section>
 
-        Tout d'abord, ce projet avait pour but d'aboutir sur une application web qui peut gérer des étudiants avec une base de données.
-        Nous avions aussi un client avec qui nous avons appliqué la méthode Agile pour simuler un vrai projet.
-        Enfin, nous avons pu tester nos capacités en PHP, qui nous a été fraîchement enseigné.
-    </p>
-
-    <img src="ressource/imageetudiant.png" alt="Image du projet Trains" id="etudiant-img">
-</section>
 
     <!-- Section Compétences -->
     <section id="competences">
@@ -71,6 +133,12 @@
             <span>Java</span>
             <div class="bar-container">
                 <div class="bar" data-level="85"></div>
+            </div>
+        </div>
+        <div class="competence">
+            <span>C#</span>
+            <div class="bar-container">
+                <div class="bar" data-level="75"></div>
             </div>
         </div>
         <div class="competence">
@@ -97,20 +165,17 @@
             <h3>Administrer</h3>
             <p>Déployer des services dans une architecture réseau.</p>
         </section>
-
         <section class="card gerer">
             <h3>Gérer</h3>
             <p>Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité.</p>
         </section>
-
         <section class="card conduire">
             <h3>Conduire</h3>
             <p>Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs.</p>
         </section>
     </div>
 
-
-    <!-- Footer avec logo LinkedIn -->
+    <!-- Footer avec logo LinkedIn / GitHub / CV -->
     <footer id="footer-section">
         <a href="https://www.linkedin.com/in/loris-mounier-62a2a82aa/" target="_blank">
             <img src="ressource/linkedin.png" alt="Lien vers le profil LinkedIn de Loris Mounier" id="linkedin-img">
@@ -118,12 +183,13 @@
         <a href="https://github.com/gastinegaz" target="_blank">
             <img src="ressource/github.png" alt="Lien vers le profil github de Loris Mounier" id="github-img">
         </a>
-        <a href="ressource/CV_Stage_BUT2_Loris_Mounier.pdf" download="CV_Loris_Mounier">
+        <a href="ressource/CV_2025_Loris_Mounier.pdf" download="CV_Loris_Mounier">
             <img src="ressource/CV.png" alt="Télécharger mon CV" id="cv-img">
         </a>
     </footer>
 </main>
 
+<!-- Script JS (inchangé, gère header, compétences et modals) -->
 <script src="Style/competence.js"></script>
 </body>
 </html>
