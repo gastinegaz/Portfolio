@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
     --bg-primary: #0a0a0f;
@@ -472,7 +472,7 @@ img {
 }
 
     .trait::before {
-        content: '✦';
+        content: '?';
         font-size: 0.7rem;
     }
 
@@ -861,7 +861,7 @@ img {
     }
 
         .project-section li::before {
-            content: '▸';
+            content: '?';
             position: absolute;
             left: -1.5rem;
             color: var(--accent);
