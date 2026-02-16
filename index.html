@@ -1,234 +1,279 @@
 <!DOCTYPE html>
 <html lang="fr" data-theme="dark">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loris Portfolio</title>
-
-    <!-- SEO / Partage -->
-    <meta name="description" content="Portfolio de Loris Mounier — Étudiant en BUT Informatique : projets, compétences, alternance." />
-    <meta property="og:title" content="Portfolio — Loris Mounier" />
-    <meta property="og:description" content="Projets, compétences et expériences en informatique." />
-    <meta property="og:image" content="ressource/og-image.jpg" />
-    <meta name="theme-color" content="#ff8a3d" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="ressource/favicon.svg" type="image/svg+xml" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="Style/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loris Mounier — Portfolio</title>
+    <meta name="description" content="Portfolio de Loris Mounier, étudiant en BUT Informatique. Découvrez mes projets, compétences et parcours.">
+    <meta property="og:title" content="Loris Mounier — Portfolio">
+    <meta property="og:description" content="Étudiant en BUT Informatique passionné par le développement web et logiciel.">
+    <meta name="theme-color" content="#ff7a2f">
+    <link rel="icon" href="ressource/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
-
-<!-- Header / Hero -->
-<header id="header-section" aria-label="Bannière">
-    <div class="header-content">
-        <div class="top-actions">
-            <button id="theme-toggle" class="btn btn-ghost small" aria-label="Changer de thème">🌓</button>
-        </div>
-
-        <h1>Loris Mounier</h1>
-        <p>Étudiant en troisième année de BUT Informatique</p>
-
-        <div class="cta-row">
-            <a class="btn btn-primary" href="#projet">Voir mes projets</a>
-            <a class="btn btn-ghost" href="ressource/CV_2025_Loris_Mounier.pdf" download>Mon CV</a>
-        </div>
-    </div>
-</header>
-
-<main>
-
-    <!-- Moi -->
-    <section id="moi">
-        <h3>À propos de moi</h3>
-        <p>
-            Passionné par l’informatique depuis l’adolescence, j’ai commencé à apprendre la programmation à l’âge de 13 ans.
-            À l’origine motivé par la création de petits jeux vidéo, cette curiosité s’est rapidement transformée en une
-            véritable passion. J’ai alors compris que je souhaitais en faire mon métier.
-        </p>
-        <hr class="accent">
-    </section>
-
-    <!-- Parcours -->
-    <section id="parcours">
-        <h3>Parcours</h3>
-        <p>
-            Cette orientation s’est confirmée lors de mon stage de troisième dans le service informatique d’une grande entreprise.
-            Mon parcours jusqu’au baccalauréat s’est alors naturellement dessiné. La spécialité STI2D correspondait parfaitement
-            à mes attentes et à mon projet professionnel.
-            Par la suite, sur les conseils de mes professeurs et après plusieurs mois de réflexion,
-            le Bachelor Universitaire de Technologie est apparu comme la voie la plus adaptée à mon profil.
-        </p>
-        <hr class="accent">
-    </section>
-
-    <!-- BUT -->
-    <section id="BUT">
-        <h3>BUT Informatique</h3>
-        <p>
-            Le BUT Informatique m’a permis de reprendre les bases de la programmation à un niveau bien plus approfondi.
-            J’y ai appris plusieurs langages de programmation et renforcé mes compétences à travers les projets appelés SAE,
-            qui m’ont permis de travailler sur des problématiques concrètes et professionnalisantes.
-        </p>
-        <hr class="accent">
-    </section>
-
-    <!-- Projets -->
-    <section id="projet" aria-label="Projets">
-        <h3>Projets</h3>
-        <p>
-            Voici quelques projets marquants réalisés au cours de ma formation.
-        </p>
-
-        <div class="projects-carousel" role="region" aria-roledescription="carrousel" aria-label="Carrousel de projets">
-            <button class="nav-btn prev" aria-label="Projet précédent">❮</button>
-
-            <ul class="slides" aria-live="polite">
-
-                <li class="project-slide" data-index="0">
-                    <article class="project-card-visual" tabindex="0" aria-label="Projet Trains">
-                        <span class="ribbon">SAE</span>
-                        <img src="ressource/imagetrains.png" alt="Aperçu du projet Trains" loading="lazy">
-                        <div class="project-info">
-                            <h4>Projet Trains</h4>
-                            <p>
-                                Développement du jeu japonais « Trains » en Java.
-                                Ce projet marque l’aboutissement de l’apprentissage
-                                de la programmation orientée objet et des interfaces graphiques.
-                            </p>
-                            <div class="tags">
-                                <span>Java</span><span>POO</span><span>IHM</span>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="project-slide" data-index="1">
-                    <article class="project-card-visual" tabindex="0" aria-label="Projet Poursuite d’études">
-                        <span class="ribbon">SAE</span>
-                        <img src="ressource/imageetudiant.png" alt="Aperçu du projet Poursuite d’études" loading="lazy">
-                        <div class="project-info">
-                            <h4>Poursuite d’études</h4>
-                            <p>
-                                Simulation de projet en entreprise : développement d’une application web
-                                de gestion d’étudiants avec base de données, en suivant une méthode Agile,
-                                et en utilisant PHP.
-                            </p>
-                            <div class="tags">
-                                <span>PHP</span><span>Agile</span><span>SQL</span>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-
-                <li class="project-slide" data-index="2">
-                    <article class="project-card-visual" tabindex="0" aria-label="Stage Boa Concept">
-                        <span class="ribbon">Stage</span>
-                        <img src="ressource/Boa.png" alt="Aperçu du stage Boa Concept" loading="lazy">
-                        <div class="project-info">
-                            <h4>Stage BUT2 — Boa Concept</h4>
-                            <p>
-                                Développement d’un logiciel de statistiques en C# destiné à la hotline,
-                                en remplacement d’un ancien outil, au sein d’une entreprise spécialisée
-                                dans les convoyeurs intelligents.
-                            </p>
-                            <div class="tags">
-                                <span>C#</span><span>Desktop</span><span>Statistiques</span>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">LM</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stage.html">Stage</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☀️</button>
+                <a href="ressource/CV_2025_Loris_Mounier.pdf" download class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">CV</a>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-            <button class="nav-btn next" aria-label="Projet suivant">❯</button>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Disponible pour un Master 2026
+            </div>
+            <h1>Bonjour, je suis <span class="gradient">Loris Mounier</span></h1>
+            <p class="hero-subtitle">Étudiant en 3ème année de BUT Informatique en alternance, passionné par le développement web et logiciel</p>
+            <div class="hero-actions">
+                <a href="projets.html" class="btn btn-primary">
+                    Voir mes projets
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+                <a href="contact.html" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="section-header">
+            <span class="section-label">À propos</span>
+            <h2 class="section-title">Qui suis-je ?</h2>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p class="about-text" style="font-size: 1.15rem; margin-bottom: 1.5rem;">
+                Passionné d'informatique depuis l'adolescence, j'ai commencé la programmation en créant des petits jeux vidéo.
+                Cette curiosité s'est transformée en vocation : je suis aujourd'hui en <strong>3ème année de BUT Informatique</strong>
+                en alternance chez <strong>Boa Concept</strong>, où je développe mes compétences au quotidien.
+            </p>
+            <p class="about-text" style="font-size: 1.15rem; margin-bottom: 2rem;">
+                Mon objectif : intégrer un <strong>Master en Informatique/Management</strong> pour consolider
+                ma formation et être pleinement opérationnel dans mon futur métier.
+            </p>
+            <div class="traits" style="justify-content: center; margin-bottom: 2rem;">
+                <span class="trait">Souriant</span>
+                <span class="trait">Joyeux</span>
+                <span class="trait">Serviable</span>
+                <span class="trait">Sociable</span>
+                <span class="trait">Travailleur</span>
+            </div>
+            <a href="ressource/CV_2025_Loris_Mounier.pdf" download class="btn btn-primary">
+                Télécharger mon CV
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" /></svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="parcours">
+        <div class="section-header">
+            <span class="section-label">Parcours</span>
+            <h2 class="section-title">Mon chemin vers l'informatique</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">2023 - Aujourd'hui</span>
+                <h3 class="timeline-title">BUT Informatique — IUT Montpellier-Sète</h3>
+                <p class="timeline-desc">
+                    Formation approfondie en programmation (Java, PHP, C#, SQL), gestion de projet Agile,
+                    développement web full-stack et architecture logicielle. Actuellement en 3ème année en alternance.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">2024</span>
+                <h3 class="timeline-title">Stage — Boa Concept</h3>
+                <p class="timeline-desc">
+                    Développement d'un logiciel de statistiques en C# pour la hotline.
+                    Découverte de technologies comme FetchXML et XAML dans un environnement professionnel.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">2020 - 2023</span>
+                <h3 class="timeline-title">Bac STI2D</h3>
+                <p class="timeline-desc">
+                    Spécialité Sciences et Technologies de l'Industrie et du Développement Durable,
+                    parfaitement adaptée à mon projet professionnel en informatique.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">13 ans</span>
+                <h3 class="timeline-title">Premiers pas en programmation</h3>
+                <p class="timeline-desc">
+                    Découverte de la programmation en autodidacte via la création de petits jeux vidéo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="competences">
+        <div class="section-header">
+            <span class="section-label">Compétences</span>
+            <h2 class="section-title">Technologies & Savoir-faire</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><span class="icon">💻</span> Langages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">TypeScript</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><span class="icon">🛠️</span> Frameworks & Outils</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Symfony</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">API Platform</span>
+                    <span class="skill-tag">Twig</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">PHPUnit</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><span class="icon">🗄️</span> Base de données</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MariaDB</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">FetchXML</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><span class="icon">📋</span> Méthodologies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Agile / Scrum</span>
+                    <span class="skill-tag">Gestion de projet</span>
+                    <span class="skill-tag">Tests unitaires</span>
+                    <span class="skill-tag">API REST</span>
+                    <span class="skill-tag">MVC</span>
+                </div>
+            </div>
         </div>
 
-        <div class="dots" role="tablist" aria-label="Indicateurs du carrousel">
-            <button class="dot" data-go="0"></button>
-            <button class="dot" data-go="1"></button>
-            <button class="dot" data-go="2"></button>
+        <div style="margin-top: 3rem;">
+            <h3 style="text-align:center; margin-bottom: 2rem; font-size: 1.3rem;">Compétences du BUT Informatique</h3>
+            <div class="skills-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="skill-card" style="border-left: 3px solid #f0e68c;">
+                    <h4 style="color: #f0e68c; margin-bottom: 0.5rem;">Administrer</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Déployer des services dans une architecture réseau</p>
+                </div>
+                <div class="skill-card" style="border-left: 3px solid #93f191;">
+                    <h4 style="color: #93f191; margin-bottom: 0.5rem;">Gérer</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Optimiser une base de données et assurer la sécurité</p>
+                </div>
+                <div class="skill-card" style="border-left: 3px solid #9acbff;">
+                    <h4 style="color: #9acbff; margin-bottom: 0.5rem;">Conduire</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Appliquer une démarche de gestion de projet</p>
+                </div>
+            </div>
         </div>
-
-        <hr class="accent">
     </section>
 
-    <!-- Actuellement -->
-    <section id="actuellement">
-        <h3>Actuellement</h3>
-        <p>
-            Je suis actuellement en troisième année de BUT Informatique en alternance chez Boa Concept.
-            Cette expérience me permet de développer mes compétences techniques, de me familiariser avec
-            le monde de l’entreprise et d’apprendre ses méthodes de travail.
-        </p>
-        <hr class="accent">
+    <section class="section" style="background: var(--bg-secondary); max-width: 100%; padding: 5rem 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div class="section-header">
+                <span class="section-label">Projets</span>
+                <h2 class="section-title">Réalisations marquantes</h2>
+                <p class="section-desc">Découvrez une sélection de mes projets réalisés en formation</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="ressource/imagetrains.png" alt="Projet Trains">
+                        <span class="project-badge">SAE</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Projet Trains</h3>
+                        <p class="project-desc">Développement du jeu japonais « Trains » en Java orienté objet avec interface graphique FXML.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">POO</span>
+                            <span class="project-tag">FXML</span>
+                        </div>
+                        <a href="projet-trains.html" class="project-link">
+                            Voir le projet
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="ressource/imageetudiant.png" alt="SAE Poursuite d'études">
+                        <span class="project-badge">SAE</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Poursuite d'études</h3>
+                        <p class="project-desc">Application web de gestion d'étudiants avec système d'agrégation et génération de PDF.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">Agile</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        <a href="projet-poursuite.html" class="project-link">
+                            Voir le projet
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="ressource/Boa.png" alt="Stage Boa Concept">
+                        <span class="project-badge">Stage</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Stage Boa Concept</h3>
+                        <p class="project-desc">Développement d'un logiciel de statistiques en C# pour la hotline de l'entreprise.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C#</span>
+                            <span class="project-tag">XAML</span>
+                            <span class="project-tag">FetchXML</span>
+                        </div>
+                        <a href="stage.html" class="project-link">
+                            Voir le projet
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="projets.html" class="btn btn-secondary">Voir tous les projets</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Avenir -->
-    <section id="avenir">
-        <h3>Avenir</h3>
-        <p>
-            Pour la suite de mon parcours, plusieurs options s’offrent à moi.
-            La première serait de poursuivre mes études jusqu’à un niveau bac+5,
-            afin de consolider mes compétences et faciliter mon insertion professionnelle.
-            La seconde option serait d’entrer directement dans le monde du travail à l’issue du BUT3,
-            bien que les opportunités puissent alors être plus limitées.
-        </p>
-        <hr class="accent">
-    </section>
-
-    <!-- Compétences -->
-    <section id="competences">
-        <h3>Compétences</h3>
-
-        <div class="competence"><span>SQL</span><div class="segmented" data-level="17"></div></div>
-        <div class="competence"><span>Java</span><div class="segmented" data-level="17"></div></div>
-        <div class="competence"><span>C#</span><div class="segmented" data-level="15"></div></div>
-        <div class="competence"><span>HTML / CSS</span><div class="segmented" data-level="15"></div></div>
-        <div class="competence"><span>PHP</span><div class="segmented" data-level="15"></div></div>
-        <div class="competence"><span>C</span><div class="segmented" data-level="8"></div></div>
-
-        <hr class="accent">
-    </section>
-
-    <!-- Compétences transversales -->
-    <div class="competence-cards">
-        <section class="card administrer">
-            <h3>Administrer</h3>
-            <p>Déployer des services dans une architecture réseau.</p>
-        </section>
-        <section class="card gerer">
-            <h3>Gérer</h3>
-            <p>Optimiser une base de données, interagir avec une application et assurer la sécurité.</p>
-        </section>
-        <section class="card conduire">
-            <h3>Conduire</h3>
-            <p>Appliquer une démarche de gestion de projet en fonction des besoins métiers.</p>
-        </section>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer-section">
-        <a href="https://www.linkedin.com/in/loris-mounier-62a2a82aa/" target="_blank" rel="noopener">
-            <img src="ressource/linkedin.png" alt="Profil LinkedIn de Loris Mounier" loading="lazy">
-        </a>
-        <a href="https://github.com/gastinegaz" target="_blank" rel="noopener">
-            <img src="ressource/github.png" alt="Profil GitHub de Loris Mounier" loading="lazy">
-        </a>
-        <a href="ressource/CV_2025_Loris_Mounier.pdf" download>
-            <img src="ressource/CV.png" alt="Télécharger le CV de Loris Mounier" loading="lazy">
-        </a>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Loris Mounier</div>
+            <p class="footer-text">© 2025 — Portfolio réalisé avec passion</p>
+        </div>
     </footer>
 
-</main>
+    <button class="back-to-top" aria-label="Retour en haut">↑</button>
 
-<button id="to-top" aria-label="Remonter en haut">↑</button>
-
-<script src="Style/competence.js"></script>
+    <script src="Style/main.js"></script>
 </body>
 </html>

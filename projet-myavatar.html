@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAvatar — Loris Mounier</title>
+    <meta name="description" content="Clone du service Gravatar développé avec le framework Symfony.">
+    <link rel="icon" href="ressource/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">LM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="stage.html">Stage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☀️</button>
+                <a href="ressource/CV_2025_Loris_Mounier.pdf" download class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">CV</a>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="projets.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+                Retour aux projets
+            </a>
+            <span class="project-badge" style="position: static; margin-bottom: 1rem;">SAE S5</span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 5vw, 3rem);">MyAvatar</h1>
+            <p class="section-desc">Clone du service Gravatar avec Symfony — Gestion d'avatars par email</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Durée</div>
+                    <div class="meta-value">~1 mois</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Équipe</div>
+                    <div class="meta-value">4 personnes</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Framework</div>
+                    <div class="meta-value">Symfony</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-detail">
+        <div class="project-main-image">
+            <!-- IMAGE: Ajouter une capture de MyAvatar -->
+            <div style="width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#1e3a5f,#2d5a87);display:flex;align-items:center;justify-content:center;font-size:5rem;border-radius:var(--radius-lg);">🖼️</div>
+        </div>
+
+        <section class="project-section">
+            <h2>Contexte du projet</h2>
+            <p>
+                Ce projet de SAE au semestre 5 consistait à développer un clone du service <strong>Gravatar</strong>
+                en utilisant le framework Symfony. Gravatar permet d'associer une photo de profil à une adresse
+                email : n'importe quelle application peut ensuite charger cette image simplement en hachant
+                l'email avec SHA256.
+            </p>
+            <p>
+                L'objectif était de maîtriser le développement web "server-side rendering" avec Symfony et Twig,
+                tout en implémentant des fonctionnalités avancées comme l'authentification, la gestion de fichiers,
+                et les commandes Symfony.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Fonctionnalités principales</h2>
+            <ul>
+                <li>
+                    <strong>Inscription/Connexion :</strong> Système complet d'authentification avec login,
+                    mot de passe et adresse email.
+                </li>
+                <li>
+                    <strong>Gestion de profil :</strong> Upload, modification et suppression de photo de profil
+                    depuis un espace privé.
+                </li>
+                <li>
+                    <strong>Accès public aux avatars :</strong> Route /avatar/{hash} permettant d'accéder à
+                    l'avatar via le hash SHA256 de l'email.
+                </li>
+                <li>
+                    <strong>Profil masquable :</strong> Possibilité de masquer/démasquer son profil en AJAX
+                    sans rechargement de page.
+                </li>
+                <li>
+                    <strong>Mode maintenance :</strong> Paramètre dans .env permettant de basculer le site
+                    en mode maintenance.
+                </li>
+                <li>
+                    <strong>Administration :</strong> Rôle administrateur avec liste des utilisateurs et
+                    possibilité de suppression.
+                </li>
+                <li>
+                    <strong>Commandes CLI :</strong> Commandes Symfony pour créer/supprimer des utilisateurs
+                    depuis le terminal.
+                </li>
+                <li>
+                    <strong>Vérification AJAX :</strong> Validation en temps réel du login et email lors
+                    de l'inscription.
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Ma contribution</h2>
+            <p>
+                Au sein de l'équipe, je me suis principalement occupé de :
+            </p>
+            <ul>
+                <li>
+                    <strong>Système de rôles :</strong> Implémentation de la gestion des rôles utilisateur/administrateur
+                    avec les voters Symfony.
+                </li>
+                <li>
+                    <strong>Fonctionnalités d'administration :</strong> Développement de l'interface admin pour
+                    la gestion des comptes.
+                </li>
+                <li>
+                    <strong>Intégration des fonctionnalités :</strong> Participation à l'assemblage des différentes
+                    parties du projet.
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Technologies utilisées</h2>
+            <div class="project-tags" style="margin-top: 1rem;">
+                <span class="project-tag">Symfony 6</span>
+                <span class="project-tag">Twig</span>
+                <span class="project-tag">PHP 8</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">AJAX</span>
+                <span class="project-tag">SHA256</span>
+                <span class="project-tag">Doctrine</span>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Compétences développées</h2>
+            <div class="competences-grid">
+                <div class="competence-item">
+                    <h4>Réaliser</h4>
+                    <p>Développer une application web complète avec un framework moderne</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Administrer</h4>
+                    <p>Gérer l'authentification, les rôles et la sécurité applicative</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Gérer</h4>
+                    <p>Manipuler les fichiers et la base de données avec Doctrine</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Optimiser</h4>
+                    <p>Utiliser AJAX pour améliorer l'expérience utilisateur</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Points techniques notables</h2>
+            <p>
+                Un aspect intéressant du projet était la <strong>sécurisation du stockage des images</strong>.
+                Les photos de profil ne devaient pas être accessibles publiquement dans le dossier public/,
+                car un utilisateur peut masquer son profil. La solution a été de servir les images via un
+                contrôleur Symfony qui vérifie les permissions avant de retourner le fichier.
+            </p>
+            <p>
+                Ce projet a également servi de base pour le projet <strong>MyCritique</strong>, qui utilise
+                les avatars MyAvatar pour afficher les photos de profil des utilisateurs.
+            </p>
+        </section>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="projet-poursuite.html" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+                Projet précédent
+            </a>
+            <a href="projet-mycritique.html" class="btn btn-primary">
+                Projet suivant
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Loris Mounier</div>
+            <p class="footer-text">© 2025 — Portfolio réalisé avec passion</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <script src="Style/main.js"></script>
+</body>
+</html>

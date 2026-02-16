@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Trains — Loris Mounier</title>
+    <meta name="description" content="Développement du jeu japonais Trains en Java orienté objet avec interface graphique.">
+    <link rel="icon" href="ressource/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">LM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="stage.html">Stage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☀️</button>
+                <a href="ressource/CV_2025_Loris_Mounier.pdf" download class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">CV</a>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="projets.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Retour aux projets
+            </a>
+            <span class="project-badge" style="position: static; margin-bottom: 1rem;">SAE S2</span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 5vw, 3rem);">Projet Trains</h1>
+            <p class="section-desc">Développement complet du jeu de plateau japonais « Trains » en Java</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Durée</div>
+                    <div class="meta-value">1 semestre</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Équipe</div>
+                    <div class="meta-value">2 personnes</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Contexte</div>
+                    <div class="meta-value">BUT 1 — SAE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-detail">
+        <div class="project-main-image">
+            <img src="ressource/imagetrains.png" alt="Capture d'écran du jeu Trains">
+        </div>
+
+        <section class="project-section">
+            <h2>Contexte du projet</h2>
+            <p>
+                Dans le cadre de la SAE du semestre 2 du BUT Informatique, nous devions développer une version 
+                numérique du jeu de plateau japonais « Trains ». Ce projet constituait l'aboutissement de notre 
+                apprentissage en programmation orientée objet et représentait notre premier projet d'envergure 
+                impliquant une interface graphique complète.
+            </p>
+            <p>
+                Le projet était structuré en <strong>trois parties distinctes</strong> permettant d'évaluer 
+                différentes compétences : le développement du moteur de jeu, l'implémentation d'algorithmes 
+                sur les graphes, et la création de l'interface utilisateur.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Structure du projet</h2>
+            <ul>
+                <li><strong>Partie 1 — Moteur de jeu :</strong> Développement de toute la logique du jeu en Java 
+                    orienté objet. Gestion des règles, des cartes, des joueurs et du déroulement des parties.</li>
+                <li><strong>Partie 2 — Algorithmes de graphe :</strong> Implémentation de fonctions pour calculer 
+                    des éléments sur la carte du jeu (chemins, connexions, scores). Cette partie était davantage 
+                    orientée vers l'évaluation des compétences algorithmiques.</li>
+                <li><strong>Partie 3 — Interface graphique :</strong> Création d'une interface utilisateur complète 
+                    en FXML permettant de jouer au jeu de manière intuitive et agréable.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Technologies utilisées</h2>
+            <div class="project-tags" style="margin-top: 1rem;">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">JavaFX</span>
+                <span class="project-tag">FXML</span>
+                <span class="project-tag">POO</span>
+                <span class="project-tag">Algorithmes de graphe</span>
+                <span class="project-tag">Git</span>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Compétences développées</h2>
+            <div class="competences-grid">
+                <div class="competence-item">
+                    <h4>Réaliser</h4>
+                    <p>Développer une application complète en respectant les besoins du client</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Optimiser</h4>
+                    <p>Implémenter des algorithmes efficaces sur les graphes</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Collaborer</h4>
+                    <p>Travailler en binôme avec partage des tâches via Git</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Concevoir</h4>
+                    <p>Modéliser une architecture orientée objet cohérente</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Résultat</h2>
+            <p>
+                Le projet a abouti à un jeu fonctionnel permettant de jouer des parties complètes de Trains 
+                avec une interface graphique fluide. L'architecture orientée objet mise en place a permis 
+                d'avoir un code maintenable et extensible, facilitant l'ajout de nouvelles cartes ou règles.
+            </p>
+        </section>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="projets.html" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Tous les projets
+            </a>
+            <a href="projet-poursuite.html" class="btn btn-primary">
+                Projet suivant
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Loris Mounier</div>
+            <p class="footer-text">© 2025 — Portfolio réalisé avec passion</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <script src="Style/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCritique — Loris Mounier</title>
+    <meta name="description" content="Site de critiques avec API REST Symfony et front-end Vue.js.">
+    <link rel="icon" href="ressource/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">LM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="stage.html">Stage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☀️</button>
+                <a href="ressource/CV_2025_Loris_Mounier.pdf" download class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">CV</a>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="projets.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+                Retour aux projets
+            </a>
+            <span class="project-badge" style="position: static; margin-bottom: 1rem;">SAE S5</span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 5vw, 3rem);">MyCritique</h1>
+            <p class="section-desc">Site de critiques avec API REST (Symfony) et front-end (Vue.js)</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Durée</div>
+                    <div class="meta-value">~2 mois</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Équipe</div>
+                    <div class="meta-value">4 personnes</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Architecture</div>
+                    <div class="meta-value">Client-Serveur</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-detail">
+        <div class="project-main-image">
+            <!-- IMAGE: Ajouter une capture de MyCritique -->
+            <div style="width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#3d1e5f,#5a2d87);display:flex;align-items:center;justify-content:center;font-size:5rem;border-radius:var(--radius-lg);">⭐</div>
+        </div>
+
+        <section class="project-section">
+            <h2>Contexte du projet</h2>
+            <p>
+                Suite logique du projet MyAvatar, ce projet de SAE consistait à développer un site de critiques
+                en architecture <strong>client-serveur</strong>. L'objectif était de créer deux applications
+                distinctes qui communiquent entre elles : une <strong>API REST</strong> développée avec Symfony
+                et API Platform, et une <strong>application front-end</strong> en Vue.js.
+            </p>
+            <p>
+                Le thème des objets critiquables était semi-libre — notre équipe a choisi de créer un site de
+                critiques permettant aux utilisateurs de noter et commenter différents types d'objets.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Architecture du projet</h2>
+            <ul>
+                <li>
+                    <strong>Back-end (API REST) :</strong> Développé avec Symfony et API Platform, gère toute
+                    la logique métier, l'authentification JWT, et expose les ressources via des endpoints REST.
+                </li>
+                <li>
+                    <strong>Front-end (Vue.js) :</strong> Application SPA qui consomme l'API, gère l'interface
+                    utilisateur et la navigation avec Vue Router.
+                </li>
+                <li>
+                    <strong>Intégration MyAvatar :</strong> Les photos de profil sont chargées depuis le service
+                    MyAvatar en utilisant le hash SHA256 de l'email de l'utilisateur.
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Fonctionnalités principales</h2>
+            <ul>
+                <li>
+                    <strong>Authentification JWT :</strong> Système complet de connexion/inscription avec tokens
+                    JWT et rafraîchissement automatique.
+                </li>
+                <li>
+                    <strong>Gestion des rôles :</strong> Utilisateurs basiques et administrateurs avec permissions
+                    différenciées.
+                </li>
+                <li>
+                    <strong>CRUD objets critiquables :</strong> Création, lecture, modification et suppression
+                    d'objets (validation requise pour les utilisateurs basiques).
+                </li>
+                <li>
+                    <strong>Système de critiques :</strong> Notes, commentaires et critères spécifiques par objet
+                    avec calcul de moyenne.
+                </li>
+                <li><strong>Favoris :</strong> Mise en favori d'objets avec page dédiée listant les dernières critiques.</li>
+                <li>
+                    <strong>Administration :</strong> Gestion des comptes, validation des soumissions, suppression
+                    de contenu.
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Ma contribution</h2>
+            <p>
+                Au sein de l'équipe, je me suis concentré sur :
+            </p>
+            <ul>
+                <li>
+                    <strong>Système de rôles et permissions :</strong> Implémentation des voters Symfony et
+                    configuration des accès API Platform avec le paramètre security.
+                </li>
+                <li>
+                    <strong>Gestion des objets critiquables :</strong> Développement des endpoints pour la
+                    création et la gestion des objets.
+                </li>
+                <li>
+                    <strong>Intégration front-end :</strong> Participation au développement des composants Vue.js
+                    liés aux fonctionnalités que j'ai développées côté API.
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Technologies utilisées</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+                <div>
+                    <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Back-end</h4>
+                    <div class="project-tags">
+                        <span class="project-tag">Symfony 6</span>
+                        <span class="project-tag">API Platform</span>
+                        <span class="project-tag">JWT</span>
+                        <span class="project-tag">Doctrine</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-2); margin-bottom: 0.5rem;">Front-end</h4>
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js 3</span>
+                        <span class="project-tag">TypeScript</span>
+                        <span class="project-tag">Vue Router</span>
+                        <span class="project-tag">Pinia</span>
+                        <span class="project-tag">Axios</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Compétences développées</h2>
+            <div class="competences-grid">
+                <div class="competence-item">
+                    <h4>Réaliser</h4>
+                    <p>Développer une architecture client-serveur moderne avec API REST</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Administrer</h4>
+                    <p>Sécuriser une API avec JWT et gérer les permissions</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Optimiser</h4>
+                    <p>Utiliser les groupes de sérialisation pour optimiser les réponses</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Collaborer</h4>
+                    <p>Travailler en équipe sur deux projets interconnectés</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Points techniques notables</h2>
+            <p>
+                Ce projet m'a permis d'approfondir ma compréhension des <strong>API REST</strong> et de
+                l'architecture client-serveur. La gestion de l'authentification JWT avec rafraîchissement
+                automatique des tokens a été particulièrement formatrice, tout comme l'utilisation des
+                <strong>groupes de normalisation</strong> d'API Platform pour contrôler précisément les
+                données exposées selon le contexte.
+            </p>
+        </section>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="projet-myavatar.html" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+                Projet précédent
+            </a>
+            <a href="projet-verybadsplit.html" class="btn btn-primary">
+                Projet suivant
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Loris Mounier</div>
+            <p class="footer-text">© 2025 — Portfolio réalisé avec passion</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <script src="Style/main.js"></script>
+</body>
+</html>

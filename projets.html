@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Loris Mounier</title>
+    <meta name="description" content="Découvrez les projets réalisés par Loris Mounier durant sa formation en BUT Informatique.">
+    <link rel="icon" href="ressource/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">LM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="stage.html">Stage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☀️</button>
+                <a href="ressource/CV_2025_Loris_Mounier.pdf" download class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">CV</a>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <span class="section-label">Portfolio</span>
+            <h1 class="section-title" style="font-size: clamp(2.2rem, 5vw, 3.5rem);">Mes Projets</h1>
+            <p class="section-desc">Une sélection de réalisations effectuées durant ma formation en BUT Informatique</p>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 2rem;">
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="ressource/imagetrains.png" alt="Projet Trains">
+                    <span class="project-badge">SAE S2</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Projet Trains</h3>
+                    <p class="project-desc">Développement complet du jeu japonais « Trains » en Java orienté objet. Le projet était divisé en 3 parties : le moteur de jeu, les algorithmes de graphe, et l'interface graphique FXML.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">POO</span>
+                        <span class="project-tag">FXML</span>
+                        <span class="project-tag">Graphes</span>
+                    </div>
+                    <a href="projet-trains.html" class="project-link">
+                        Voir le détail
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="ressource/imageetudiant.png" alt="SAE Poursuite d'études">
+                    <span class="project-badge">SAE S3</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Poursuite d'études</h3>
+                    <p class="project-desc">Application web de gestion d'étudiants permettant l'importation CSV, la création d'agrégations de notes, et la génération automatique d'avis pour les écoles.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">Agile</span>
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">PDF</span>
+                    </div>
+                    <a href="projet-poursuite.html" class="project-link">
+                        Voir le détail
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <!-- IMAGE: myavatar.png -->
+                    <div style="width:100%;height:100%;background:linear-gradient(135deg,#1e3a5f,#2d5a87);display:flex;align-items:center;justify-content:center;font-size:3rem;">🖼️</div>
+                    <span class="project-badge">SAE S5</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">MyAvatar</h3>
+                    <p class="project-desc">Clone du service Gravatar développé avec Symfony. Permet d'associer une photo de profil à une adresse email, accessible via hash SHA256.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Symfony</span>
+                        <span class="project-tag">Twig</span>
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">SHA256</span>
+                    </div>
+                    <a href="projet-myavatar.html" class="project-link">
+                        Voir le détail
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <!-- IMAGE: mycritique.png -->
+                    <div style="width:100%;height:100%;background:linear-gradient(135deg,#3d1e5f,#5a2d87);display:flex;align-items:center;justify-content:center;font-size:3rem;">⭐</div>
+                    <span class="project-badge">SAE S5</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">MyCritique</h3>
+                    <p class="project-desc">Site de critiques avec API REST (Symfony + API Platform) et front-end Vue.js. Gestion des rôles, favoris, et objets critiquables.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">API REST</span>
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">JWT</span>
+                        <span class="project-tag">TypeScript</span>
+                    </div>
+                    <a href="projet-mycritique.html" class="project-link">
+                        Voir le détail
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <!-- IMAGE: verybadsplit.png -->
+                    <div style="width:100%;height:100%;background:linear-gradient(135deg,#5f3d1e,#876a2d);display:flex;align-items:center;justify-content:center;font-size:3rem;">💰</div>
+                    <span class="project-badge">SAE S4</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Very Bad Split</h3>
+                    <p class="project-desc">Clone de Tricount : application de partage de dépenses avec API REST, authentification JWT, et programmation réactive JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">API REST</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Docker</span>
+                    </div>
+                    <a href="projet-verybadsplit.html" class="project-link">
+                        Voir le détail
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="ressource/Boa.png" alt="Stage Boa Concept">
+                    <span class="project-badge">Stage</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Stage Boa Concept</h3>
+                    <p class="project-desc">Développement d'un logiciel de statistiques en C# pour la hotline, en remplacement d'un ancien outil obsolète.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">C#</span>
+                        <span class="project-tag">XAML</span>
+                        <span class="project-tag">FetchXML</span>
+                    </div>
+                    <a href="stage.html" class="project-link">
+                        Voir l'analyse
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Loris Mounier</div>
+            <p class="footer-text">© 2025 — Portfolio réalisé avec passion</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <script src="Style/main.js"></script>
+</body>
+</html>

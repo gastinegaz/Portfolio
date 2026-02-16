@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Bad Split — Loris Mounier</title>
+    <meta name="description" content="Clone de Tricount avec API REST, JavaScript réactif et Docker.">
+    <link rel="icon" href="ressource/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">LM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="stage.html">Stage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☀️</button>
+                <a href="ressource/CV_2025_Loris_Mounier.pdf" download class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">CV</a>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="projets.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+                Retour aux projets
+            </a>
+            <span class="project-badge" style="position: static; margin-bottom: 1rem;">SAE S4</span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 5vw, 3rem);">Very Bad Split</h1>
+            <p class="section-desc">Clone de Tricount — Application de partage de dépenses entre amis</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Durée</div>
+                    <div class="meta-value">1 semestre</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Équipe</div>
+                    <div class="meta-value">5 personnes</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Focus</div>
+                    <div class="meta-value">Qualité & Architecture</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-detail">
+        <div class="project-main-image">
+            <!-- IMAGE: Ajouter une capture de Very Bad Split -->
+            <div style="width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#5f3d1e,#876a2d);display:flex;align-items:center;justify-content:center;font-size:5rem;border-radius:var(--radius-lg);">💰</div>
+        </div>
+
+        <section class="project-section">
+            <h2>Contexte du projet</h2>
+            <p>
+                Cette SAE du semestre 4 avait une particularité : nous avons reçu un code existant
+                volontairement mal conçu (d'où le nom "Very Bad Split") et notre mission était triple :
+            </p>
+            <ul>
+                <li><strong>Analyser</strong> les failles de sécurité, bugs et problèmes de qualité du code existant</li>
+                <li><strong>Normaliser</strong> la base de données en justifiant chaque décomposition</li>
+                <li><strong>Améliorer</strong> l'application en corrigeant les problèmes et en ajoutant des fonctionnalités</li>
+            </ul>
+            <p>
+                L'application est un clone de Tricount permettant de créer des événements, inviter des membres,
+                et gérer les dépenses partagées avec calcul automatique des dettes.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Fonctionnalités de l'application</h2>
+            <ul>
+                <li>
+                    <strong>Gestion des événements :</strong> Création, modification, suppression avec code secret
+                    de partage pour accès en lecture seule.
+                </li>
+                <li>
+                    <strong>Gestion des membres :</strong> Invitation, éjection de membres avec gestion des
+                    droits propriétaire/membre.
+                </li>
+                <li><strong>Gestion des dépenses :</strong> CRUD complet avec répartition équitable entre participants.</li>
+                <li>
+                    <strong>Calcul des dettes :</strong> Algorithme optimisé minimisant le nombre de transactions
+                    nécessaires pour équilibrer les comptes.
+                </li>
+                <li>
+                    <strong>Interface dynamique :</strong> Toutes les actions sur la page d'événement sans
+                    rechargement grâce à JavaScript + AJAX.
+                </li>
+                <li>
+                    <strong>Réactivité :</strong> Mise à jour automatique de l'interface lors des modifications
+                    grâce à une bibliothèque réactive développée en cours.
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Travail réalisé</h2>
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--accent);">Phase 1 — Analyse</h3>
+            <p>
+                Rédaction d'un rapport d'audit complet identifiant les failles de sécurité (injections SQL, XSS,
+                CSRF...), les violations des principes de qualité logicielle (DRY, SOLID), et les anomalies de
+                la base de données.
+            </p>
+
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--accent);">Phase 2 — Normalisation BDD</h3>
+            <p>
+                Passage du schéma initial dénormalisé à la 3ème forme normale avec justification de chaque
+                décomposition, preuve de préservation des données et des dépendances fonctionnelles.
+            </p>
+
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--accent);">Phase 3 — Amélioration</h3>
+            <p>
+                Refonte complète de l'architecture avec routage, vues Twig, couche service, tests unitaires
+                PHPUnit, API REST avec JWT, et dynamisation JavaScript.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Ma contribution</h2>
+            <p>
+                J'ai été fortement impliqué dans la partie <strong>back-end</strong> du projet :
+            </p>
+            <ul>
+                <li>
+                    <strong>Développement de l'API REST :</strong> Création des endpoints pour toutes les
+                    opérations (événements, membres, dépenses).
+                </li>
+                <li><strong>Authentification JWT :</strong> Mise en place du système d'authentification sécurisé.</li>
+                <li><strong>Couche service :</strong> Implémentation de la logique métier dans des services testables.</li>
+                <li><strong>Tests unitaires :</strong> Écriture de tests PHPUnit pour la couche métier.</li>
+                <li>
+                    <strong>Correction des failles :</strong> Sécurisation de l'application (requêtes préparées,
+                    échappement, validation).
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Technologies utilisées</h2>
+            <div class="project-tags" style="margin-top: 1rem;">
+                <span class="project-tag">PHP 8</span>
+                <span class="project-tag">Twig</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">API REST</span>
+                <span class="project-tag">JWT</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">AJAX</span>
+                <span class="project-tag">PHPUnit</span>
+                <span class="project-tag">Docker</span>
+                <span class="project-tag">Git</span>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Compétences développées</h2>
+            <div class="competences-grid">
+                <div class="competence-item">
+                    <h4>Réaliser</h4>
+                    <p>Développer une API REST sécurisée avec authentification JWT</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Gérer</h4>
+                    <p>Normaliser une base de données et corriger les anomalies</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Optimiser</h4>
+                    <p>Appliquer les principes de qualité logicielle (DRY, SOLID)</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Administrer</h4>
+                    <p>Virtualiser l'application avec Docker (multi-conteneur)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Points techniques notables</h2>
+            <p>
+                Ce projet a été particulièrement formateur sur la <strong>qualité logicielle</strong>.
+                Partir d'un code volontairement mal écrit nous a permis de comprendre concrètement l'importance
+                des bonnes pratiques. L'implémentation des tests unitaires avec une couverture de 100% sur
+                la couche métier a été un exercice exigeant mais très enrichissant.
+            </p>
+            <p>
+                La virtualisation avec Docker (un conteneur pour la BDD, un pour l'application) a également
+                été une compétence clé acquise lors de ce projet.
+            </p>
+        </section>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="projet-mycritique.html" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+                Projet précédent
+            </a>
+            <a href="stage.html" class="btn btn-primary">
+                Voir le stage
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Loris Mounier</div>
+            <p class="footer-text">© 2025 — Portfolio réalisé avec passion</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <script src="Style/main.js"></script>
+</body>
+</html>
