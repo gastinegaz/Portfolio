@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternance Boa Concept — Loris Mounier</title>
+    <meta name="description" content="Mon alternance de 3ème année de BUT Informatique chez Boa Concept — Développement C# WPF en environnement industriel.">
+    <link rel="icon" href="ressource/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">LM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stage.html">Stage</a></li>
+                <li><a href="alternance.html">Alternance</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">☀️</button>
+                <a href="ressource/CV_2025_Loris_Mounier.pdf" download class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">CV</a>
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+                Retour à l'accueil
+            </a>
+            <span class="project-badge" style="position: static; margin-bottom: 1rem; background: linear-gradient(135deg, #ff7a2f, #ffaa70);">Alternance BUT3</span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 5vw, 3rem);">Alternance chez Boa Concept</h1>
+            <p class="section-desc">Développement logiciel C# / WPF sur des applications industrielles de gestion de convoyeurs</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Durée</div>
+                    <div class="meta-value">1 an</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Période</div>
+                    <div class="meta-value">Sept. 2025 — Août 2026</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Rythme</div>
+                    <div class="meta-value">2 semaines / 2 semaines</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Poste</div>
+                    <div class="meta-value">Développeur logiciel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-detail">
+
+        <div class="project-main-image">
+            <img src="ressource/Boa.png" alt="Logo Boa Concept">
+        </div>
+
+        <section class="project-section">
+            <h2>L'entreprise</h2>
+            <p>
+                <strong>Boa Concept</strong> est une entreprise spécialisée dans la conception et la fabrication
+                de <strong>convoyeurs intelligents</strong> pour l'industrie logistique. Ses solutions modulaires permettent
+                d'optimiser les flux de marchandises dans les entrepôts et centres de distribution à travers l'Europe.
+            </p>
+            <p>
+                Le service informatique interne développe les logiciels de pilotage des convoyeurs ainsi que
+                les outils de configuration, de supervision et de support technique. C'est dans cette équipe
+                que j'ai intégré l'alternance, suite à mon stage de BUT2.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Contexte de l'alternance</h2>
+            <p>
+                Fort de mon stage de BUT2 chez Boa Concept, j'ai poursuivi l'aventure en <strong>alternance
+                pour ma 3ème année de BUT Informatique</strong>. Cette continuité m'a permis de prendre
+                rapidement en main des projets plus complexes, avec une vraie montée en responsabilités.
+            </p>
+            <p>
+                Mon travail porte sur le développement et l'amélioration de <strong>logiciels de bureau</strong>
+                utilisés par les techniciens et ingénieurs pour configurer et superviser les convoyeurs.
+                Ces outils sont au cœur du métier de l'entreprise et demandent fiabilité et soin dans leur conception.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Panneau technique des cartes — Logiciel de configuration</h2>
+            <p>
+                À partir de février 2026, je travaille sur la <strong>refonte d'un logiciel de configuration
+                des convoyeurs</strong>. Ce logiciel permet aux techniciens de visualiser et modifier les
+                paramètres de chaque élément du convoyeur depuis une interface graphique. L'objectif est de
+                restructurer le code existant pour le rendre plus propre, plus maintenable et plus facile
+                à faire évoluer.
+            </p>
+
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--accent);">Phase 1 — Informations techniques</h3>
+            <p>
+                Refonte du panneau affichant les informations techniques d'une carte convoyeur. Le travail
+                consiste à mieux séparer la logique de l'application de son affichage, pour que chaque
+                partie du code ait un rôle clair et soit plus facile à tester et à modifier.
+            </p>
+
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--accent);">Phase 2 — Grille de paramètres</h3>
+            <p>
+                La grille de paramètres est le composant central du logiciel : elle affiche des dizaines
+                de paramètres configurables, chacun avec son propre type et son propre comportement.
+                Sa refonte est la partie la plus complexe du projet, car elle implique de gérer de nombreux
+                cas particuliers tout en gardant le code lisible et évolutif.
+            </p>
+
+            <div class="competences-grid" style="margin-top: 1.5rem;">
+                <div class="competence-item">
+                    <h4>Architecture logicielle</h4>
+                    <p>Séparation claire des responsabilités pour un code maintenable sur le long terme</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Interface graphique</h4>
+                    <p>Composants d'affichage avancés adaptés à des données industrielles complexes</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Persistance des données</h4>
+                    <p>Sauvegarde et mise à jour des paramètres en base de données de manière fiable</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Multilingue</h4>
+                    <p>Affichage des labels dans la langue de l'utilisateur selon sa configuration</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Technologies & environnement</h2>
+            <p>
+                L'environnement technique de Boa Concept est centré sur l'écosystème <strong>Microsoft .NET</strong>,
+                avec des contraintes et des outils spécifiques au monde industriel :
+            </p>
+            <div class="project-tags" style="margin-top: 1rem;">
+                <span class="project-tag">C#</span>
+                <span class="project-tag">WPF / XAML</span>
+                <span class="project-tag">MVVM</span>
+                <span class="project-tag">.NET</span>
+                <span class="project-tag">Entity Framework</span>
+                <span class="project-tag">DevExpress</span>
+                <span class="project-tag">Visual Studio</span>
+                <span class="project-tag">Git</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">FetchXML</span>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Déroulement de l'année</h2>
+            <div class="timeline" style="margin-top: 1.5rem;">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Septembre 2025</span>
+                    <h3 class="timeline-title">Intégration et prise en main</h3>
+                    <p class="timeline-desc">
+                        Début de l'alternance, reprise de l'environnement connu depuis le stage de BUT2.
+                        Montée en responsabilités rapide grâce à la continuité avec l'équipe et le code base.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Automne 2025</span>
+                    <h3 class="timeline-title">BoaStat — Évolution du logiciel de statistiques</h3>
+                    <p class="timeline-desc">
+                        Reprise et évolution du logiciel de statistiques hotline développé lors du stage.
+                        Nouvelles fonctionnalités, corrections et améliorations de l'interface sur la base
+                        du retour des utilisateurs internes.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Février 2026</span>
+                    <h3 class="timeline-title">Début de la refonte du logiciel de configuration</h3>
+                    <p class="timeline-desc">
+                        Démarrage du projet de refonte. Première étape : restructuration du panneau
+                        d'informations techniques des cartes convoyeur pour mieux organiser le code
+                        et faciliter les évolutions futures.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Printemps 2026</span>
+                    <h3 class="timeline-title">Refonte de la grille de paramètres</h3>
+                    <p class="timeline-desc">
+                        Travail sur le composant central du logiciel : la grille qui affiche et permet
+                        de modifier tous les paramètres d'un convoyeur. Le plus complexe du projet,
+                        en cours de développement.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Août 2026</span>
+                    <h3 class="timeline-title">Fin de l'alternance</h3>
+                    <p class="timeline-desc">
+                        Finalisation du travail en cours, stabilisation, documentation et passation avant
+                        la fin du contrat d'alternance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Compétences développées</h2>
+            <div class="competences-grid">
+                <div class="competence-item">
+                    <h4>Réaliser</h4>
+                    <p>Améliorer et restructurer une application desktop complexe utilisée en production</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Optimiser</h4>
+                    <p>Concevoir un code plus lisible, mieux organisé et plus facile à faire évoluer</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Collaborer</h4>
+                    <p>Travailler en équipe avec des contraintes réelles de production et de versioning</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Conduire</h4>
+                    <p>Avancer par phases structurées avec des objectifs intermédiaires clairs</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Analyse de l'expérience</h2>
+
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--accent);">Ce que j'ai appris</h3>
+            <ul>
+                <li>
+                    <strong>Travailler sur un projet existant :</strong> Reprendre un code déjà en production
+                    m'a appris à être méthodique, à bien comprendre l'existant avant de modifier quoi que ce soit,
+                    et à avancer par petites étapes maîtrisées.
+                </li>
+                <li>
+                    <strong>Aller plus loin que la théorie :</strong> Appliquer des notions vues en cours
+                    sur un vrai projet de taille industrielle révèle des subtilités qu'on ne rencontre pas en formation.
+                </li>
+                <li>
+                    <strong>S'adapter à un environnement professionnel :</strong> Outils internes, conventions
+                    d'équipe, contraintes de production — tout ça s'apprend sur le terrain.
+                </li>
+                <li>
+                    <strong>Autonomie et rigueur :</strong> Être responsable d'un composant utilisé au quotidien
+                    par des techniciens impose une discipline et une attention à la qualité que l'académique ne peut pas reproduire.
+                </li>
+            </ul>
+
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--accent);">Difficultés rencontrées</h3>
+            <p>
+                La principale difficulté a été de s'approprier un projet de grande taille, avec ses propres
+                habitudes et son historique. Comprendre pourquoi le code était écrit d'une certaine façon
+                avant de le modifier, sans rien casser au passage, demande de la patience et de la méthode.
+            </p>
+
+            <h3 style="font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--accent);">Lien avec mon projet professionnel</h3>
+            <p>
+                Cette alternance confirme mon envie de continuer à progresser et d'apprendre, aussi bien
+                sur le plan technique qu'humain. Chaque projet est une nouvelle occasion de monter en compétences,
+                et c'est cette dynamique qui me motive au quotidien.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Bilan</h2>
+            <p>
+                Cette année d'alternance chez Boa Concept a été décisive dans mon parcours. Passer
+                de stagiaire à alternant sur les mêmes projets m'a permis de mesurer concrètement
+                ma progression et d'assumer une vraie responsabilité technique. Le contexte industriel,
+                exigeant et stimulant, a été le meilleur terrain d'apprentissage possible pour préparer la suite.
+            </p>
+        </section>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="stage.html" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+                Voir le stage BUT2
+            </a>
+            <a href="contact.html" class="btn btn-primary">
+                Me contacter
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Loris Mounier</div>
+            <p class="footer-text">© 2026 — Portfolio</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <script src="Style/main.js"></script>
+</body>
+</html>
